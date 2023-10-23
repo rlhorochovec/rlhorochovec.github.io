@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Criar conta</title>
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <main>
+         <div class="container py-4">
+            <h1>Criar conta</h1>
+            <a href="index.html" class="link-danger"><- Voltar</a>
+            <form>
+               <div class="form-group row">
+                  <label class="col-4 col-form-label" for="nome">Nome</label> 
+                  <div class="col-8">
+                     <input id="nome" name="nome" placeholder="Nome" type="text" class="form-control" required="required">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label class="col-4 col-form-label" for="sobrenome">Sobrenome</label> 
+                  <div class="col-8">
+                     <input id="sobrenome" name="sobrenome" placeholder="Sobrenome" type="text" class="form-control" required="required">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label class="col-4 col-form-label" for="email">E-mail</label> 
+                  <div class="col-8">
+                     <input id="email" name="email" placeholder="E-mail" type="text" required="required" class="form-control">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label class="col-4">Sexo</label> 
+                  <div class="col-8">
+                     <div class="custom-control custom-radio custom-control-inline">
+                        <input name="sexo" id="sexo_0" type="radio" class="custom-control-input" value="M"> 
+                        <label for="sexo_0" class="custom-control-label">Masculino</label>
+                     </div>
+                     <div class="custom-control custom-radio custom-control-inline">
+                        <input name="sexo" id="sexo_1" type="radio" class="custom-control-input" value="F"> 
+                        <label for="sexo_1" class="custom-control-label">Feminino</label>
+                     </div>
+                     <div class="custom-control custom-radio custom-control-inline">
+                        <input name="sexo" id="sexo_2" type="radio" class="custom-control-input" value="N"> 
+                        <label for="sexo_2" class="custom-control-label">Prefino não dizer</label>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="escolaridade" class="col-4 col-form-label">Escolaridade</label> 
+                  <div class="col-8">
+                     <select id="escolaridade" name="escolaridade" class="custom-select">
+                        <option value="fundamental">Fundamental</option>
+                        <option value="medio">Médio</option>
+                        <option value="superior">Superior</option>
+                        <option value="pos">Pós-Graduado</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label class="col-4">Hobbies</label> 
+                  <div class="col-8">
+                     <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="hobbies" id="hobbies_0" type="checkbox" class="custom-control-input" value="musica"> 
+                        <label for="hobbies_0" class="custom-control-label">Música</label>
+                     </div>
+                     <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="hobbies" id="hobbies_1" type="checkbox" class="custom-control-input" value="cinema"> 
+                        <label for="hobbies_1" class="custom-control-label">Cinema</label>
+                     </div>
+                     <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="hobbies" id="hobbies_2" type="checkbox" class="custom-control-input" value="esportes"> 
+                        <label for="hobbies_2" class="custom-control-label">Esportes</label>
+                     </div>
+                     <div class="custom-control custom-checkbox custom-control-inline">
+                        <input name="hobbies" id="hobbies_3" type="checkbox" class="custom-control-input" value="viagens"> 
+                        <label for="hobbies_3" class="custom-control-label">Viagens</label>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <div class="offset-4 col-8">
+                     <button name="submit" type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+               </div>
+            </form>
+            <footer class="pt-3 mt-4 text-muted border-top">
+               &copy; 2021
+            </footer>
+            <script src="assets/js/popper.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+         </div>
+      </main>
+   </body>
+</html>
