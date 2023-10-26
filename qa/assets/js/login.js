@@ -23,8 +23,10 @@ function logar() {
     }
 
     if (login == "admin" && senha == "admin") {
+        document.getElementById("erro").innerHTML = "";
         location.href = "admin.html";
     } else if (login == "user" && senha == "user") {
+        document.getElementById("erro").innerHTML = "";
         location.href = "user.html"
     }
 }
