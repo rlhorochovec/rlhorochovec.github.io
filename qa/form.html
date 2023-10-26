@@ -51,55 +51,115 @@
          <div class="container py-4">
             <h1>Formulários</h1>
             <form class="row g-3">
-               <div class="col-md-6">
-                  <label for="inputName4" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="inputName4">
+               <div class="col-md-5">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome">
                </div>
-               <div class="col-md-6">
-                  <label for="inputSurname4" class="form-label">Surname</label>
-                  <input type="text" class="form-control" id="inputSurname4">
+               <div class="col-md-5">
+                  <label for="sobrenome" class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control" id="sobrenome">
                </div>
-               <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+               <div class="col-md-7">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email">
+                  <small class="text-muted">ex. "support@email.com"</small>
                </div>
-               <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+               <div class="col-md-3">
+                  <label for="celular" class="form-label">Celular</label>
+                  <input type="text" class="form-control" id="celular" data-mask='(00) 00000-0000'>
+                  <small class="text-muted">ex. "(99) 99999-9999"</small>
                </div>
-               <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+               <div class="col-5">
+                  <label for="cpf" class="form-label">CPF</label>
+                  <input type="text" class="form-control" id="cpf" data-mask='000.000.000-00'>
+                  <small class="text-muted">ex. "999.999.999-99"</small>
                </div>
-               <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+               <div class="col-5">
+                  <label for="dtNascimento" class="form-label">Data de Nascimento</label>
+                  <input type="text" class="form-control" id="dtNascimento" data-mask='dd/mm/yyyy'>
+                  <small class="text-muted">ex. "DD/MM/YYYY"</small>
                </div>
-               <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-               </div>
-               <div class="col-md-4">
-                  <label for="inputState" class="form-label">State</label>
-                  <select id="inputState" class="form-select">
-                     <option selected>Choose...</option>
-                     <option>...</option>
+               <div class="col-md-3">
+                  <label for="formacao" class="form-label">Formação</label>
+                  <select id="formacao" class="form-select">
+                     <option selected>Selecione...</option>
+                     <option value="fundamental">Fundamental</option>
+                     <option value="medio">Médio</option>
+                     <option value="graduacao">Graduação</option>
+                     <option value="pos">Pós-Gradução</option>
                   </select>
                </div>
-               <div class="col-md-2">
-                  <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
+               <div class="col-md-4">
+                  <label for="instituicao" class="form-label">Instituição</label>
+                  <input type="text" class="form-control" id="instituicao">
                </div>
-               <div class="col-12">
-                  <div class="form-check">
-                     <input class="form-check-input" type="checkbox" id="gridCheck">
-                     <label class="form-check-label" for="gridCheck">
-                     Check me out
+               <div class="col-md-3">
+                  <label for="conclusao" class="form-label">Ano de Conclusão</label>
+                  <input type="text" class="form-control" id="conclusao" data-mask='yyyy'>
+                  <small class="text-muted">ex. "2023"</small>
+               </div>
+               <div class="col-md-5">
+                  <label for="Linguagens">Linguagens</label>
+                  <select multiple class="form-control" id="linguagens">
+                     <option value="java">Java</option>
+                     <option value="net">.NET</option>
+                     <option value="node">Node</option>
+                     <option value="python">Python</option>
+                     <option value="php">PHP</option>
+                  </select>
+               </div>
+               <div class="col-md-5">
+                  <label for="resumo">Resumo Profissional</label>
+                  <textarea class="form-control" id="resumo" rows="3"></textarea>
+               </div>
+               <div class="col-md-5">
+                  <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="radio" name="masculino" id="masculino">
+                     <label class="form-check-label" for="masculino">
+                     Masculino
+                     </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="radio" name="feminino" id="feminino">
+                     <label class="form-check-label" for="feminino">
+                     Feminino
+                     </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="radio" name="nao" id="nao" checked>
+                     <label class="form-check-label" for="nao">
+                     Prefiro não dizer
+                     </label>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="checkbox" value="cinema" id="cinema">
+                     <label class="form-check-label" for="cinema">
+                     Cinema
+                     </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="checkbox" value="cinema" id="musica">
+                     <label class="form-check-label" for="musica">
+                     Música
+                     </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="checkbox" value="esportes" id="esportes" checked>
+                     <label class="form-check-label" for="esportes">
+                     Esportes
+                     </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="checkbox" value="viagem" id="viagem">
+                     <label class="form-check-label" for="viagem"></label>
+                     Viagem
                      </label>
                   </div>
                </div>
                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Sign in</button>
+                  <button type="submit" class="btn btn-primary btn-lg">Salvar</button>
                </div>
             </form>
             <footer class="pt-3 mt-4 text-muted border-top">
@@ -107,6 +167,8 @@
             </footer>
          </div>
       </main>
+      <script src="assets/js/jsuites.js"></script>
+      <script src="assets/js/form.js"></script>
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>
    </body>
