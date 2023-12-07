@@ -155,11 +155,10 @@
 	body, input, select, textarea {
 		color: #414f57;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 14pt;
+		font-size: 11pt;
 		font-weight: 300;
 		line-height: 2;
 		letter-spacing: 0.2em;
-		text-transform: uppercase;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -921,7 +920,7 @@
 		opacity: 0.95;
 		position: relative;
 		text-align: center;
-		width: 27em;
+		width: 23em;
 	}
 
 		#main .avatar {
