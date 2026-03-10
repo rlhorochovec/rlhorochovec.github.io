@@ -1,138 +1,390 @@
 <!doctype html>
-<html lang="pt-br" data-bs-theme="dark">
+<html lang="pt-br" data-bs-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rafael Horochovec — QA Engineer SR | SDET</title>
     <meta name="description" content="Portfólio de Rafael Horochovec — QA Engineer SR / SDET. Test Automation, CTFL, AZ-900, DP-900, Selenium, Appium, Cypress, Robot Framework, Playwright, CI/CD." />
 
+    <!-- Bootstrap 5.3 (CSS & Icons) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rafael Horochovec — QA Engineer SR">
+    <meta property="og:description" content="Portfólio com skills, certificações, projetos e experiência.">
+    <meta property="og:type" content="website">
+
     <style>
-      :root,[data-bs-theme="dark"]{--bs-body-bg:#0d0f12;--bs-body-color:#d0d0d0;--bs-border-color:rgba(255,255,255,0.1);--surface-1:#14171c;--surface-2:#1a1e24;--surface-3:#222831;--accent:#0d6efd;--accent-soft:rgba(13,110,253,.2)}
-      body{background-color:var(--bs-body-bg);color:var(--bs-body-color)}.avatar{width:200px;height:200px;object-fit:cover;border-radius:50%;border:3px solid var(--accent)}
-      .hero{background:radial-gradient(1200px 400px at 10% -10%, rgba(13,110,253,.12), transparent),radial-gradient(800px 300px at 80% -10%, rgba(0,212,255,.08), transparent)}
-      .section-title{font-weight:700;letter-spacing:.2px}.badge-skill{font-weight:500;padding:.6rem .8rem;margin:.25rem;border-radius:999px;background-color:var(--surface-3);color:#eaeaea;border:1px solid rgba(255,255,255,0.08)}
-      .contact a{text-decoration:none}
-      .navbar{background-color:var(--surface-1)!important;border-bottom:1px solid var(--bs-border-color)}.card{background-color:var(--surface-2);border:1px solid rgba(255,255,255,0.08);color:#e0e0e0}
-      .card:hover{border-color:var(--accent)}.bg-body-tertiary{background-color:var(--surface-1)!important}a{color:#64b5ff}a:hover{color:#85c7ff}
-      .btn-primary{background-color:var(--accent);border-color:var(--accent)}.btn-primary:hover{background-color:#0b5ed7}
-      footer{background-color:var(--surface-1);border-top:1px solid var(--bs-border-color)}
-      .note{font-size:.875rem;color:#b8c1cc}
+      /* Ajustes visuais rápidos */
+      .avatar {
+        width: 200px; height: 200px; object-fit: cover;
+        border-radius: 50%; border: 3px solid var(--bs-primary);
+      }
+      .hero {
+        background: radial-gradient(1200px 400px at 10% -10%, rgba(13,110,253,.08), transparent),
+                    radial-gradient(800px 300px at 80% -10%, rgba(13,202,240,.08), transparent);
+      }
+      .section-title {
+        font-weight: 700; letter-spacing: .2px;
+      }
+      .badge-skill {
+        font-weight: 500; padding: .6rem .8rem; margin: .25rem;
+        border-radius: 999px;
+      }
+      .timeline-dot {
+        width: .8rem; height: .8rem; background: var(--bs-primary); border-radius: 50%;
+        margin-right: .75rem; margin-top: .4rem;
+      }
+      .contact a { text-decoration: none; }
+      .btn-theme-toggle {
+        border: 1px solid var(--bs-border-color);
+      }
+      @media (min-width: 992px) {
+        .hero h1 { font-size: 3rem; }
+      }
     </style>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body border-bottom sticky-top">
       <div class="container">
-        <a class="navbar-brand fw-semibold" href="#home">Xovec</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+        <a class="navbar-brand fw-bold" href="#home">Xovec</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div id="nav" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
             <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#certs">Certificações</a></li>
             <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
             <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Hero -->
     <header id="home" class="hero py-5">
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-12 col-lg-8">
             <h1 class="fw-bold mb-2">Rafael Horochovec</h1>
-            <p class="lead text-body-secondary mb-3">QA Engineer SR | Test Automation | SDET — CTFL | AZ-900 | DP-900</p>
-            <p class="mb-4">Selenium · Appium · Cypress · CodeceptJS · Robot Framework · Playwright · Postman · CI/CD</p>
+            <p class="lead text-body-secondary mb-3">
+              QA Engineer SR | Test Automation | SDET — CTFL | AZ-900 | DP-900
+            </p>
+            <p class="mb-4">
+              Selenium · Appium · Cypress · CodeceptJS · Robot Framework · Playwright · Postman · CI/CD
+            </p>
             <div class="d-flex gap-2 flex-wrap">
-              <a class="btn btn-primary" href="#contato"><i class="bi bi-send me-1"></i> Fale comigo</a>
-              <a class="btn btn-outline-light" href="https://rlhorochovec.github.io/rafael_horochovec.pdf" target="_blank" rel="noopener"><i class="bi bi-filetype-pdf me-1"></i> Baixar CV (PDF)</a>
-              <a class="btn btn-outline-light" href="https://github.com/rlhorochovec" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> GitHub</a>
-              <a class="btn btn-outline-light" href="https://br.linkedin.com/in/rlhorochovec" target="_blank" rel="noopener"><i class="bi bi-linkedin me-1"></i> LinkedIn</a>
+              <a href="#contato" class="btn btn-primary">
+                <i class="bi bi-send me-1"></i> Fale comigo
+              </a>
+              <a class="btn btn-outline-primary" href="https://rlhorochovec.github.io/rafael_horochovec.pdf" target="_blank" rel="noopener">
+                <i class="bi bi-filetype-pdf me-1"></i> Baixar CV (PDF)
+              </a>
+              <a class="btn btn-outline-secondary" href="https://github.com/rlhorochovec" target="_blank" rel="noopener">
+                <i class="bi bi-github me-1"></i> GitHub
+              </a>
+              <a class="btn btn-outline-secondary" href="https://br.linkedin.com/in/rlhorochovec" target="_blank" rel="noopener">
+                <i class="bi bi-linkedin me-1"></i> LinkedIn
+              </a>
             </div>
           </div>
           <div class="col-12 col-lg-4 text-lg-end text-center">
-            <img class="avatar" src="assets/img/avatar.jpeg" alt="Foto de perfil" />
+            <!-- Troque por uma foto sua (ex: /assets/me.jpg) -->
+            <img class="avatar" src="assets/img/avatar.jpeg" alt="Foto de perfil de Rafael Horochovec">
           </div>
         </div>
       </div>
     </header>
 
+    <!-- Sobre -->
     <section id="sobre" class="py-5">
       <div class="container">
         <h2 class="section-title h3 mb-4">Sobre</h2>
         <div class="row g-4">
           <div class="col-lg-8">
-            <p>Profissional com mais de 12 anos de experiência em automação de testes de aplicações Desktop, Web, Mobile e API; manutenção e implantação de frameworks; planejamento de automação (levantamento de requisitos, análise de viabilidade, estimativas de custos e prazos); e integração contínua em pipelines de qualidade.</p>
-            <p class="mb-0">Principais stacks: <strong>Java</strong>, <strong>Selenium</strong>, <strong>JavaScript</strong>, <strong>Robot Framework</strong>, <strong>Playwright</strong>, <strong>RestAssured</strong>, relatórios (<strong>Allure</strong>), e integração com <strong>Jira/Xray</strong>, <strong>Jenkins</strong> e <strong>Azure DevOps</strong>.</p>
+            <p>Profissional com mais de 12 anos de experiência em automação de testes para aplicações Desktop, Web, Mobile e APIs, atuando desde a definição da estratégia até a entrega contínua em pipelines de qualidade. Experiência sólida no desenvolvimento, manutenção e evolução de frameworks de automação, além do planejamento detalhado das iniciativas de QA — incluindo levantamento de requisitos, análise de viabilidade, estimativas de esforço, custos e prazos.</p>
+            <p>Ao longo da carreira, tenho trabalhado diretamente na implementação de boas práticas de automação, padronização de processos, suporte a times de desenvolvimento/QA e integração completa com ferramentas de gestão e CI/CD. Forte atuação em ambientes colaborativos, orientados a resultados e com foco na escalabilidade das soluções de teste.</p>
           </div>
           <div class="col-lg-4">
             <div class="p-3 bg-body-tertiary rounded-3">
-              <div class="d-flex align-items-center mb-2"><i class="bi bi-geo-alt text-primary me-2"></i><span>Curitiba/PR — Brasil</span></div>
-              <div class="d-flex align-items-center mb-2"><i class="bi bi-envelope text-primary me-2"></i><a href="mailto:rl.horochovec@gmail.com">rl.horochovec@gmail.com</a></div>
-              <div class="d-flex align-items-center"><i class="bi bi-telephone text-primary me-2"></i><a href="tel:+5541987068376">+55 (41) 98706-8376</a></div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-geo-alt text-primary me-2"></i>
+                <span>Curitiba/PR — Brasil</span>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-envelope text-primary me-2"></i>
+                <a href="mailto:rl.horochovec@gmail.com">rl.horochovec@gmail.com</a>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <a href="tel:+5541987068376">+55 (41) 98706-8376</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="py-5 bg-body-tertiary">
       <div class="container">
         <h2 class="section-title h3 mb-4">Skills</h2>
         <div class="d-flex flex-wrap">
-          <span class="badge badge-skill">Selenium</span><span class="badge badge-skill">Appium</span><span class="badge badge-skill">Cypress</span><span class="badge badge-skill">CodeceptJS</span><span class="badge badge-skill">Robot Framework</span><span class="badge badge-skill">Playwright</span><span class="badge badge-skill">Postman</span><span class="badge badge-skill">CI/CD</span><span class="badge badge-skill">RestAssured</span><span class="badge badge-skill">Allure</span><span class="badge badge-skill">Jira/Xray</span><span class="badge badge-skill">Jenkins</span><span class="badge badge-skill">Azure DevOps</span><span class="badge badge-skill">Java</span><span class="badge badge-skill">JavaScript</span>
+          <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Selenium</span>
+          <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Appium</span>
+          <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Cypress</span>
+          <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">CodeceptJS</span>
+          <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Robot Framework</span>
+          <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Playwright</span>
+          <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Postman</span>
+          <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">CI/CD</span>
+          <span class="badge bg-secondary-subtle text-secondary-emphasis badge-skill">RestAssured</span>
+          <span class="badge bg-secondary-subtle text-secondary-emphasis badge-skill">Allure</span>
+          <span class="badge bg-secondary-subtle text-secondary-emphasis badge-skill">Jira/Xray</span>
+          <span class="badge bg-secondary-subtle text-secondary-emphasis badge-skill">Jenkins</span>
+          <span class="badge bg-secondary-subtle text-secondary-emphasis badge-skill">Azure DevOps</span>
+          <span class="badge bg-secondary-subtle text-secondary-emphasis badge-skill">Java</span>
+          <span class="badge bg-secondary-subtle text-secondary-emphasis badge-skill">JavaScript</span>
         </div>
       </div>
     </section>
 
+    <!-- Certificações -->
     <section id="certs" class="py-5">
       <div class="container">
         <h2 class="section-title h3 mb-4">Certificações</h2>
         <div class="row g-4 row-cols-1 row-cols-md-3">
-          <div class="col"><div class="card h-100"><div class="card-body"><span class="badge text-bg-success mb-2">Ativo</span><h3 class="h5">CTFL — ISTQB</h3><p class="mb-0 text-body-secondary">Certified Tester Foundation Level</p></div></div></div>
-          <div class="col"><div class="card h-100"><div class="card-body"><span class="badge text-bg-success mb-2">Ativo</span><h3 class="h5">AZ-900 — Microsoft</h3><p class="mb-0 text-body-secondary">Azure Fundamentals</p></div></div></div>
-          <div class="col"><div class="card h-100"><div class="card-body"><span class="badge text-bg-success mb-2">Ativo</span><h3 class="h5">DP-900 — Microsoft</h3><p class="mb-0 text-body-secondary">Azure Data Fundamentals</p></div></div></div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2">Ativo</span>
+                <h3 class="h5">CTFL — ISTQB</h3>
+                <p class="mb-0 text-body-secondary">Certified Tester Foundation Level</p>
+                <p><br>
+                <a class="btn btn-outline-primary btn-sm" href="https://www.credly.com/badges/c705a5cd-76f8-47f9-838d-494884398024/linked_in_profile" target="_blank" rel="noopener">
+                <i class="bi bi-box-arrow-up-right"></i>  Exibir credencial
+              </a>
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2">Ativo</span>
+                <h3 class="h5">AZ-900 — Microsoft</h3>
+                <p class="mb-0 text-body-secondary">Azure Fundamentals</p>
+                <p><br>
+                <a class="btn btn-outline-primary btn-sm" href="https://learn.microsoft.com/pt-br/users/rlhorochovec/credentials/1563c4d36f06269f" target="_blank" rel="noopener">
+                <i class="bi bi-box-arrow-up-right"></i>  Exibir credencial
+              </a>
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2">Ativo</span>
+                <h3 class="h5">DP-900 — Microsoft</h3>
+                <p class="mb-0 text-body-secondary">Azure Data Fundamentals</p>
+                <p><br>
+                <a class="btn btn-outline-primary btn-sm" href="https://learn.microsoft.com/pt-br/users/rlhorochovec/credentials/c6d8a468d6b8d189" target="_blank" rel="noopener">
+                <i class="bi bi-box-arrow-up-right"></i>  Exibir credencial
+              </a>
+              </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Projetos -->
     <section id="projetos" class="py-5 bg-body-tertiary">
       <div class="container">
-        <h2 class="section-title h3 m-0 mb-4">Projetos em Destaque</h2>
+        <h2 class="section-title h3 mb-4">Projetos em Destaque</h2>
         <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-          <div class="col"><div class="card h-100"><div class="card-body d-flex flex-column"><h3 class="h5">codeceptjs-web-test</h3><p class="text-body-secondary flex-grow-1">Automação Web com CodeceptJS.</p><a class="mt-auto" href="https://github.com/rlhorochovec/codeceptjs-web-test" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Ver repositório</a></div></div></div>
-          <div class="col"><div class="card h-100"><div class="card-body d-flex flex-column"><h3 class="h5">codeceptjs-api-test</h3><p class="text-body-secondary flex-grow-1">Automação de APIs com CodeceptJS.</p><a class="mt-auto" href="https://github.com/rlhorochovec/codeceptjs-api-test" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Ver repositório</a></div></div></div>
-          <div class="col"><div class="card h-100"><div class="card-body d-flex flex-column"><h3 class="h5">cypress-web-test</h3><p class="text-body-secondary flex-grow-1">Automação Web com Cypress.</p><a class="mt-auto" href="https://github.com/rlhorochovec/cypress-web-test" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Ver repositório</a></div></div></div>
-          <div class="col"><div class="card h-100"><div class="card-body d-flex flex-column"><h3 class="h5">robot-web-test</h3><p class="text-body-secondary flex-grow-1">Automação Web com Robot Framework.</p><a class="mt-auto" href="https://github.com/rlhorochovec/robot-web-test" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Ver repositório</a></div></div></div>
-          <div class="col"><div class="card h-100"><div class="card-body d-flex flex-column"><h3 class="h5">appium-codeceptjs-test</h3><p class="text-body-secondary flex-grow-1">Automação Mobile com Appium + CodeceptJS.</p><a class="mt-auto" href="https://github.com/rlhorochovec/appium-codeceptjs-test" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Ver repositório</a></div></div></div>
-          <div class="col"><div class="card h-100"><div class="card-body d-flex flex-column"><h3 class="h5">appium-robot-test</h3><p class="text-body-secondary flex-grow-1">Automação Mobile com Appium + Robot Framework.</p><a class="mt-auto" href="https://github.com/rlhorochovec/appium-robot-test" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Ver repositório</a></div></div></div>
+          <!-- Exemplo de cards com links do GitHub -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">codeceptjs-web-test</h3>
+                <p class="text-body-secondary flex-grow-1">Automação Web com CodeceptJS.</p>
+                <a class="btn btn-outline-primary mt-auto" target="_blank" rel="noopener"
+                   href="https://github.com/rlhorochovec/codeceptjs-web-test">
+                  <i class="bi bi-github me-1"></i> Ver repositório
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">codeceptjs-api-test</h3>
+                <p class="text-body-secondary flex-grow-1">Automação de APIs com CodeceptJS.</p>
+                <a class="btn btn-outline-primary mt-auto" target="_blank" rel="noopener"
+                   href="https://github.com/rlhorochovec/codeceptjs-api-test">
+                  <i class="bi bi-github me-1"></i> Ver repositório
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">cypress-web-test</h3>
+                <p class="text-body-secondary flex-grow-1">Automação Web com Cypress.</p>
+                <a class="btn btn-outline-primary mt-auto" target="_blank" rel="noopener"
+                   href="https://github.com/rlhorochovec/cypress-web-test">
+                  <i class="bi bi-github me-1"></i> Ver repositório
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">robot-web-test</h3>
+                <p class="text-body-secondary flex-grow-1">Automação Web com Robot Framework.</p>
+                <a class="btn btn-outline-primary mt-auto" target="_blank" rel="noopener"
+                   href="https://github.com/rlhorochovec/robot-web-test">
+                  <i class="bi bi-github me-1"></i> Ver repositório
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">appium-codeceptjs-test</h3>
+                <p class="text-body-secondary flex-grow-1">Automação Mobile com Appium + CodeceptJS.</p>
+                <a class="btn btn-outline-primary mt-auto" target="_blank" rel="noopener"
+                   href="https://github.com/rlhorochovec/appium-codeceptjs-test">
+                  <i class="bi bi-github me-1"></i> Ver repositório
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">appium-robot-test</h3>
+                <p class="text-body-secondary flex-grow-1">Automação Mobile com Appium + Robot Framework.</p>
+                <a class="btn btn-outline-primary mt-auto" target="_blank" rel="noopener"
+                   href="https://github.com/rlhorochovec/appium-robot-test">
+                  <i class="bi bi-github me-1"></i> Ver repositório
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="text-center mt-4"><a class="btn btn-outline-light" href="https://github.com/rlhorochovec?tab=repositories" target="_blank" rel="noopener"><i class="bi bi-grid me-1"></i> Ver todos os repositórios</a></div>
+        <div class="text-center mt-4">
+          <a class="btn btn-outline-secondary" target="_blank" rel="noopener" href="https://github.com/rlhorochovec?tab=repositories">
+            <i class="bi bi-grid me-1"></i> Ver todos os repositórios
+          </a>
+        </div>
       </div>
     </section>
 
-    <section id="contato" class="py-5">
+    <!-- Experiência (resumo em timeline) -->
+    <section id="experiencia" class="py-5">
+      <div class="container">
+        <h2 class="section-title h3 mb-4">Experiência</h2>
+        <div class="d-flex">
+          <div class="timeline-dot"></div>
+          <div>
+            <h3 class="h5 mb-1">ANALISTA SISTEMAS SR — Bradesco</h3>
+            <span class="text-body-secondary">jul/2024 — atual</span>
+            <p class="mb-2">Atuação no time core de Engenharia de Qualidade; Evolução dos Frameworks de Testes Automatizado.</p>
+            <span class="badge text-bg-light">Java</span>
+            <span class="badge text-bg-light">Selenium</span>
+            <span class="badge text-bg-light">Appium</span>
+            <span class="badge text-bg-light">RestAssured</span>
+            <span class="badge text-bg-light">Github</span>
+          </div>
+        </div>
+        <hr>
+        <div class="d-flex">
+          <div class="timeline-dot"></div>
+          <div>
+            <h3 class="h5 mb-1">Especialista em Testes — GFT (C6 Bank)</h3>
+            <span class="text-body-secondary">jun/2023 — jul/2024</span>
+            <p class="mb-2">Time core de QA (empréstimos consignados). Cenários e testes automatizados (Web e API) com Robot Framework.</p>
+            <span class="badge text-bg-light">Robot Framework</span>
+            <span class="badge text-bg-light">APIs</span>
+          </div>
+        </div>
+        <hr>
+        <div class="d-flex">
+          <div class="timeline-dot"></div>
+          <div>
+            <h3 class="h5 mb-1">Especialista em Testes — GFT (Banco Safra - CoE)</h3>
+            <span class="text-body-secondary">nov/2022 — abr/2023</span>
+            <p class="mb-2">Automação Mobile/Web/API; Integração com Zephyr (Jira).</p>
+            <span class="badge text-bg-light">CodeceptJS</span>
+            <span class="badge text-bg-light">Appium</span>
+            <span class="badge text-bg-light">Cucumber</span>
+            <span class="badge text-bg-light">Postman</span>
+          </div>
+        </div>
+        <hr>
+        <div class="d-flex">
+          <div class="timeline-dot"></div>
+          <div>
+            <h3 class="h5 mb-1">Especialista em Testes — GFT (Serasa Experian)</h3>
+            <span class="text-body-secondary">jun/2020 — nov/2022</span>
+            <p class="mb-2">Automação de APIs, testes de performance e esteira DevSecOps; análise de logs em OpenShift/EKS.</p>
+            <span class="badge text-bg-light">RestAssured</span>
+            <span class="badge text-bg-light">Cucumber</span>
+            <span class="badge text-bg-light">JMeter</span>
+            <span class="badge text-bg-light">Jenkins</span>
+          </div>
+        </div>
+        <!-- Você pode seguir adicionando entradas conforme o PDF -->
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5 bg-body-tertiary">
       <div class="container">
         <h2 class="section-title h3 mb-4">Contato</h2>
         <div class="row g-4">
           <div class="col-md-6">
             <div class="p-3 border rounded-3 contact">
-              <div class="d-flex align-items-center mb-2"><i class="bi bi-envelope text-primary me-2"></i><a href="mailto:rl.horochovec@gmail.com">rl.horochovec@gmail.com</a></div>
-              <div class="d-flex align-items-center mb-2"><i class="bi bi-telephone text-primary me-2"></i><a href="tel:+5541987068376">+55 (41) 98706-8376</a></div>
-              <div class="d-flex align-items-center mb-2"><i class="bi bi-github text-primary me-2"></i><a href="https://github.com/rlhorochovec" target="_blank" rel="noopener">github.com/rlhorochovec</a></div>
-              <div class="d-flex align-items-center"><i class="bi bi-linkedin text-primary me-2"></i><a href="https://br.linkedin.com/in/rlhorochovec" target="_blank" rel="noopener">linkedin.com/in/rlhorochovec</a></div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-envelope text-primary me-2"></i>
+                <a href="mailto:rl.horochovec@gmail.com">rl.horochovec@gmail.com</a>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <a href="tel:+5541987068376">+55 (41) 98706-8376</a>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-github text-primary me-2"></i>
+                <a target="_blank" rel="noopener" href="https://github.com/rlhorochovec">github.com/rlhorochovec</a>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-linkedin text-primary me-2"></i>
+                <a target="_blank" rel="noopener" href="https://br.linkedin.com/in/rlhorochovec">linkedin.com/in/rlhorochovec</a>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <footer class="py-4 border-top"><div class="container small d-flex flex-wrap justify-content-between align-items-center gap-2"><span>&copy; <span id="year"></span> Rafael Horochovec. Todos os direitos reservados.</span><a class="link-light" href="#home"><i class="bi bi-arrow-up-circle me-1"></i> Voltar ao topo</a></div></footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-  </body>
-</html>
+    <footer class="py-4 border-top">
+      <div class="container small d-flex flex-wrap justify-content-between align-items-center gap-2">
